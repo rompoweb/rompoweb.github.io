@@ -1,0 +1,389 @@
+:root {
+
+    --largeur-colonne: 300px;
+    --gouttiere: 26px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+main>h2{
+    font-size: 24px;
+    font-family: var(--headings-font-family);
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: var(--main_accent-color);
+    padding: 0 16px;
+}
+
+
+button{
+    appearance: none;
+    padding: 7px 16px;
+    width: 260px;
+    height: 47px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    font-family: var(--headings-font-family);
+}
+ 
+
+.btn-offer{
+    background-color: var(--main_accent-color);
+    color: white;
+}
+.text-trois-col button,
+.btn-plus{
+    border: 1px solid var(--second_accent-color);
+    color: var(--second_accent-color);
+    background: none;
+}
+.footer [type="submit"],
+.text-trois-col button,
+button:hover,
+button:active {
+    transition: background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+}
+
+.btn-offer:hover{
+    background-color: var(--main_background-color);
+    border: 1px solid var(--main_accent-color);
+    color: var(--main_accent-color);
+}
+
+.text-trois-col button:hover,
+.btn-plus:hover{
+    background-color: var(--second_accent-color);
+    color: var( --main_background-color);
+}
+
+
+/**Header...............................................................**/
+
+header{
+    height: 75vh;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1400px;
+    overflow: hidden;
+}
+ 
+    
+
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: -100;
+    
+}
+    
+
+header .image_text{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    max-width: max-content;
+    background-color: var(--main_accent-color);
+    color: white;
+    font-family: var(--headings-font-family);
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 0.85;
+}
+
+header .image_text p {
+    max-width: 35ch;
+}
+
+header .image_text h2 {
+    max-width: 25ch;
+}
+
+header .image_text a{
+    text-decoration: none;
+    color: var(--second_accent-color) ;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+header .image_text a:hover{
+    color: #c1a550;
+}
+ 
+/*nouveau ajous grille-carte.................................................*/   
+
+
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--largeur-colonne, 200px), 1fr));
+    gap: var(--gouttiere, 30px);
+    /* padding: 20px; */
+    font-family: var(--headings-font-family);
+}
+
+.grid-card article{
+    border: 1px solid var(--border_card-color);
+    max-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border-radius: 3px;
+}
+    
+.grid-card article p{
+    font-size: 14px;
+    line-height: 135%;
+    text-align: center;
+}
+
+.grid-card .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    text-align: center;
+    
+    
+}
+
+.grid-card .time,
+.grid-card .content span{
+    inline-size:max-content;
+}
+
+
+
+.grid-card .content h2{
+    color: var(--main_accent-color);
+    opacity: 0.75;
+}
+     
+    
+
+
+.grid-card .img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.grid-card aside{
+   position: absolute;
+   padding-left: 250px;
+   
+}
+
+.grid-card aside img{
+    cursor: pointer;
+}
+
+.grid-card nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+.grid-card .price span{
+    font-size: 16px;
+    color: var(--second_accent-color);
+}
+.grid-card .price h3{
+    font-size: 20px;
+    color: var(--second_accent-color);
+    text-align: center;
+}
+  
+/*Flex-Article.........................................................*/
+
+.flex-articles{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    background-color: var(--second_background-color);
+    padding: 50px 16px;
+    margin-right: auto;
+    margin-left: auto;
+    
+   
+}
+.flex-articles article{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.flex-articles div{
+    display: flex;
+    justify-content: space-between;
+    color: var(--main_accent-color);
+}
+
+.flex-articles article>img{
+    max-width: 100%;
+    height:auto;
+    
+}
+
+.flex-articles article span{
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    
+}
+
+.flex-articles article a{
+    font-size: clamp(1rem, 1vw, 4rem);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--main_accent-color);
+    font-family: var(--headings-font-family);
+}
+
+/* Notre Mission ..............class comp-text-img.................... */
+
+.comp-text-img{
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 1185px;
+    justify-content: space-between;
+    gap: 50px;
+    font-family: var(--text-font-family);
+    border: #c1a550 1px solid;
+    padding: 40px 70px 55px 70px;
+}
+.comp-text-img aside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.comp-text-img aside span{
+    font-size: 14px;
+    font-weight: 300;
+}
+.comp-text-img article{
+    display: flex;
+    max-width: 666px;
+    min-width: 30ch;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+
+
+.comp-text-img h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.comp-text-img p{
+    line-height: 135%;
+    font-weight: 300;
+}
+   
+.comp-text-img button{
+    background-color: #c1a550;
+    color: var(--main_background-color);
+    font-family: var(--headings-font-family);
+    margin-top: 10px;
+}
+    
+
+.comp-text-img button:hover{
+    background-color: var(--headings-font-family);
+    border: #c1a550 1px solid;
+    color: #c1a550;
+}
+
+/**Mettez aux encheres.............................................. */
+
+.text-trois-col{
+    margin-top: 60px;
+    max-width: 1420px;
+    background-color: var(--second_background-color);
+    font-family: var(--text-font-family);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between; 
+    padding: 50px 100px 65px 100px; 
+}
+
+
+.text-trois-col h2{
+    flex-basis: 100%;
+    padding-bottom: 30px;
+    font-family: var(--headings-font-family);
+}
+    
+.text-trois-col>div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+   
+.text-trois-col a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--second_accent-color);
+} 
+    
+
+.text-trois-col button{
+
+ max-width: 340px;
+ min-width: 250px;
+ color: var(--main_accent-color);
+}
+    
+
+.text-trois-col p{
+    max-width: 35ch;
+    line-height: 135%;
+    font-weight: 300;
+}
+
+
+@media only screen and (max-width: 640px){
+
+    .grid-card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+        
+

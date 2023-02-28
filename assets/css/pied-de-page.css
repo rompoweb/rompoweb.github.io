@@ -1,0 +1,233 @@
+/** pied de la page **/
+
+footer{
+    padding-top: 50px;
+   
+    margin: 0 auto;
+    max-width: 1400px;
+    background-color: var(--main_accent-color);
+    color: var(--footer_text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+}
+
+footer .compte-contacte,
+footer .footer-entetes{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+    gap: 20px;
+}
+  
+
+
+
+footer .compte-contacte{
+
+    padding:0;
+}
+    
+footer .compte-contacte>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 22ch;
+    line-height: 150%;
+    padding-bottom: 20px;
+}
+
+
+
+footer .footer-entetes>div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: var(--text-font-family);
+    
+}
+
+footer .footer-entetes a{
+    text-decoration: none;
+    color: var(--footer_text-color);
+}
+
+
+
+footer .compte>a{
+    text-decoration: none;
+    color: var(--second_accent-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--text-font-family);
+    display: flex;
+    align-items: center;
+    font-size: 16px !important;
+    gap:10px;
+}
+
+
+footer .boite-courriel {
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.927);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+footer .boite-courriel input{
+   height: 50px;
+   appearance: none;
+   border: 0;
+   font-family: var(--headings-font-family);
+   font-size: 16px;
+   text-transform: uppercase;
+   padding-left: 20px;
+} 
+   
+   
+
+footer [type="search"]{
+    background: var(--second_accent-color);
+    flex-basis: 70%;
+    font-weight: 400;
+    color: var(--main_background-color);
+   padding-right: 20px;
+   border-bottom-left-radius: 3px;
+   border-top-left-radius: 3px;
+}
+footer [type="submit"]{
+    background-color: var(--infolettre_submit-color);
+    flex-basis: 30%;
+    font-weight: 600;
+    color: rgb(175, 134, 57);
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+}
+
+footer [type="search"]:focus{
+    outline: none;
+} 
+
+footer [type="submit"]:hover{
+    background-color: var(--second_accent-color);
+    color: white ;
+    border-left: 2px solid rgba(255, 255, 255, 0.927);;
+
+
+}
+
+
+footer h4{
+    font-size: 24px;
+    font-weight: 300;
+    font-family: var(--headings-font-family);
+    color: var(--main_background-color)
+}
+
+footer .compte-contacte h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main_background-color)
+}
+
+footer .logo-text h4{
+    color: var(--second_accent-color);
+    max-width: 8ch;
+}
+
+footer .footer-entetes a{
+    font-size: 20px;
+    font-family: var(--headings-font-family);
+}
+
+footer .pied{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    padding-bottom: 25px;
+    color: var(--second_accent-color);
+    font-family: var(--headings-font-family);
+    gap: 20px;
+}
+    
+
+
+footer .pied div{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}
+
+
+footer .pied>span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: flex-end;
+    
+}
+
+footer .infolettre{
+    max-width: 595px;
+    
+}
+
+footer .infolettre>p{
+    font-size: 20px;
+}
+
+footer .contacte{
+    text-align: right;
+}
+
+footer .liens-sociales{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+footer a:hover{
+    color: var(--main_background-color);
+}
+
+
+
+    @media only screen and (max-width: 640px) {
+
+        
+        footer .footer-entetes .logo-text{
+            display: none;
+        }
+
+        footer .pied>span{
+            display: none;
+            
+        }
+
+        footer .pied>div{
+            text-align: left;
+            align-self: flex-start;
+        }
+
+        footer .infolettre{
+            
+            padding-top: 20px;
+        }
+        footer .contacte{
+            text-align: left;
+        }
+
+        
+
+}

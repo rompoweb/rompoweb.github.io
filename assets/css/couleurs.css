@@ -1,0 +1,15 @@
+:root{
+    --main_background-color: #fff;
+    --second_background-color: #F4F4F4;
+
+    --main_accent-color: #293451;
+    --hover_accent-color: #2f4684;
+    --second_accent-color: #A3925F;
+    --border_card-color: #D9D9D9;
+    --footer_text-color: hsla(0, 0%, 100%, 0.507);
+    --filtre_text-color: rgb(134, 134, 134);
+
+
+    --infolettre_submit-color: #ccc3aa; 
+
+}

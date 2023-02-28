@@ -1,0 +1,211 @@
+
+
+.catalogue{
+    padding-top: 50px;
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 60px;
+}
+
+.filtre-aside{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second_background-color);
+    gap: 30px;
+    padding: 20px;
+    flex-basis: 25%;
+    
+}
+    
+
+.filtre-aside span{
+    text-transform: uppercase;
+    font-family: var(--headings-font-family);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filtre-aside div>span:first-child{
+    font-size: 14px;
+}
+
+.filtre-aside [name="pays"]{
+    padding: 10px 16px;
+    font-size: 16px;
+
+}
+
+
+.filtre-aside [name="pays"],
+.filtre-aside [type=number]{
+ padding: 10px 16px;
+ appearance: textfield;
+ border: 0;
+ background: transparent;
+ border: 1px solid var(--border_card-color) ;
+ max-width: 130px;
+ font-size: 16px;
+
+}
+
+.filtre-aside p,
+.filtre-aside h3{
+    font-size: 18px;
+    font-family: var(--headings-font-family);
+    font-weight: 400;
+}
+
+.filtre-aside p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.filtre-aside>div:first-of-type div{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    font-family: var(--text-font-family);
+
+}
+
+
+.filtre-aside .btn-remettre{
+    height: auto;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid var(--border_card-color);
+ }
+  
+
+
+.filtre-aside>div{
+    padding-bottom: 20px;
+    border-bottom:  1px solid var(--border_card-color) ;
+}
+
+.filtre-aside>div .champ-double{
+    display: flex;
+}
+    
+    
+.filtre-aside>button:last-child{
+    align-self: center;
+    width: 100%;
+    background-color: var(--main_accent-color);
+    color: var(--main_background-color);
+}
+.filtre-aside>button:last-child:hover{
+background-color: transparent;
+border: 1px solid var(--border_card-color);
+color: var(--main_accent-color);
+}
+    
+    
+
+
+
+.filtre,
+.catalogue div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.catalogue .grid-card{
+   flex-basis: 70%;
+}
+
+.filtre{
+    padding-bottom: 50px;
+    align-items: center;
+}
+   
+
+.filtre button{
+    text-transform: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--headings-font-family);
+    color: var(--filtre_text-color);
+    white-space: nowrap;
+    background-color: transparent;
+    width: fit-content;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.filtre span{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--headings-font-family);
+    color: var(--main_accent-color);
+    border-right:  1px solid var(--border_card-color);
+    padding: 10px 16px;
+}
+    
+.filtre-aside .btn-remettre,
+.filtre .btn-vue{
+ width: 47px;
+ display: flex;
+ justify-content: center;
+}
+
+
+.filtre .btn-vue:hover{
+    border: 1px solid var(--border_card-color);
+}
+ 
+
+
+.filtre button:focus,
+.filtre button:hover,
+.catalogue [name="trie"],
+.filtre input{
+    height: 47px;
+    padding: 0 16px;
+    font-size: 16px !important;
+    background: 0;
+    border: 1px solid var(--border_card-color);
+    border-radius: 3px;
+}
+   
+
+
+
+.filtre button:hover,
+.filtre button:focus{
+    color: var(--main_accent-color);
+}
+
+
+.filtre button:focus,
+.filtre button:hover{
+    background:var(--second_background-color);
+    font-size: 18px;
+}
+
+.catalogue .btns-pages{
+    padding-top: 50px;
+    justify-content: center;
+}
+    
+
+.catalogue .btns-pages span{
+    padding: 10px 16px;
+    border: 1px solid var(--border_card-color);
+    font-family: var(--text-font-family);
+    cursor: pointer;
+}
+.catalogue .btns-pages span:hover{
+    background:var(--second_background-color);
+
+}
+
+.catalogue .btns-pages img{
+    cursor: pointer;
+}

@@ -1,0 +1,470 @@
+.fiche{
+    display: grid;
+    max-width: 1300px;
+    grid-template-columns: minmax(100px, max-content);
+    grid-auto-rows: minmax(100px, auto);
+    padding: 0 20px;
+    gap: 20px;
+    margin: auto;
+}
+    
+
+
+
+.fiche>h2 {
+    font-family: var(--headings-font-family);
+    margin-top: 50px;
+    grid-column: 1 / 6;
+    color: var(--main_accent-color);
+}
+
+.img-survoler {
+    grid-column: 1 / 4; 
+    grid-row: 2 / 3
+}
+
+.fiche-offre {
+    grid-column: 4 / 6; 
+    grid-row: 2 / 4;
+
+}
+
+.acordion {
+    grid-column: 1 / 4;
+    grid-row: 3 / 6;
+    max-width: 702px;
+    margin-top: 20px;
+    font-family: var(--headings-font-family);
+    
+}
+
+.img-survoler .liste-img,
+.img-survoler .description,
+.img-survoler .description>div,
+.img-survoler .survole,
+.fiche-offre
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.img-survoler .liste-img{
+    gap: 10px;
+}
+
+.fiche h2>span{
+    font-weight: 300;
+}
+
+
+.fiche-offre .historique,
+.img-survoler,
+.fiche>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+
+
+
+.fiche h2{
+    flex-basis: 100%;
+}
+
+
+.img-survoler{
+    gap: 20px;
+    max-width: 702px;
+    background-color: var(--second_background-color);
+    padding: 23px 35px 25px 35px;
+}
+    
+    
+
+.img-survoler>div{
+    gap: 20px;
+}
+
+
+.img-survoler .survole{
+    align-items: center;
+}
+
+
+.img-survoler span{
+    font-family: var(--headings-font-family);
+    font-weight: 500;
+    color: var(--main_accent-color);
+    
+}
+.img-survoler pre,
+.img-survoler p{
+    font-family: var(--text-font-family);
+    color: var(--main_accent-color);
+    font-weight: 400;
+}
+
+.img-survoler .description>div{
+    gap: 5px;
+}
+
+.img-survoler .description>div:last-child{
+    padding-top: 20px;
+}
+
+
+.img-survoler .survole>span{
+    font-size: 18px;
+    font-weight: 300;
+}
+ 
+
+.img-survoler pre{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.img-survoler pre>span{
+    color: var(--second_accent-color);
+}
+
+.img-survoler p>img{
+    padding-left: 10px;
+}
+
+.img-survoler>div:first-child img{
+    max-width: 68px;
+    max-height: 80px;
+}
+
+
+.img-survoler>div .selecte{
+    border: 1px solid var(--second_accent-color);
+    width: 88px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-survoler>div .non{
+    border: 0;
+}
+
+
+
+/*  Section fiche-offre .....................................................*/
+
+.fiche-offre{
+    border: 1px solid var(--main_accent-color);
+    border-radius: 3px;
+    gap: 20px;
+    font-family: var(--headings-font-family);
+    max-width: 558px;
+}
+
+.fiche-offre .entete{
+    background-color: var(--second_background-color);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    padding: 20px 35px;
+    font-weight: 500;
+    color: var(--main_accent-color);
+}
+ 
+.fiche-offre p{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    line-height: 135%;
+}
+
+.fiche-offre button,
+.fiche-offre input{
+    padding: 0.485rem 0.75rem;
+    height: 47px;
+    width: 215px;
+    font-size: 20px;
+    appearance: textfield;
+    border: 0;
+    background: var(--second_background-color);
+    border: 1px solid var(--second_accent-color);
+    color: var(--main_accent-color);
+    border-radius: 3px;
+
+}
+
+.fiche-offre .offre-min{
+    background: transparent;
+    color: var(--second_accent-color);
+    border: 1px solid var(--second_accent-color);
+    font-size: 16px;
+}
+
+.fiche-offre .placer{
+    color: var(--second_background-color);
+    background: var(--main_accent-color);
+    font-size: 16px;
+    border: 0;
+    margin-left: auto;
+}
+    
+.fiche-offre .placer:hover{
+    background: transparent;
+    color: var(--main_accent-color);
+    border: var(--main_accent-color) 1px solid;
+}
+ 
+.fiche-offre .offre-min:hover{
+    color: var(--second_background-color);
+    background: var(--second_accent-color);
+}
+
+
+.fiche-offre>div:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 35px 25px 35px;
+}
+
+.fiche-offre .mise,
+.fiche-offre .controle{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+
+.fiche-offre .historique{
+    gap: 10px;
+    font-family: var(--text-font-family);
+    font-size: 14px;
+    color: var(--main_accent-color);
+}
+.fiche-offre .historique>h4{
+    flex-basis: 100%;
+    padding-bottom: 10px;
+    font-family: var(--headings-font-family);
+    font-size: 18px;
+}
+.fiche-offre .historique>a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+.fiche-offre .historique>div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}  
+
+
+.fiche-offre .entete,
+.fiche-offre .entete>a{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   
+}
+   
+.fiche-offre .entete>span{
+    cursor: pointer;
+    font-size: large;
+}
+
+.fiche-offre .mise>div{
+    color:var(--second_accent-color); 
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.mise>div>span:last-child{
+    font-size: 20px;
+    font-weight: 400;
+}
+     
+.mise>span{
+    color:var(--main_accent-color) ;
+    font-weight: 500;
+}
+
+.fiche-offre b{
+    font-size: 24px;
+    padding-left: 5px;
+}
+
+
+/*Accordion.............................................................*/
+
+.acordion details{
+    padding-bottom: 10px;
+}
+  
+
+.acordion details p{
+    padding: 20px;
+}
+
+.acordion details > summary {
+	color: var(--main_accent-color);
+    background: var(--second_background-color);
+	list-style: none;
+	position: relative;
+	user-select: none;
+	cursor: pointer;
+    padding: 0.485rem 0.75rem;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border_card-color);
+}
+	
+.acordion details > summary::before {
+	position: absolute;
+	content: "+";
+	left: -1.5rem;
+	top: -0.125rem;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+.acordion details[open] > summary::before {
+	position: absolute;
+	content: "-";
+	left: -1.5rem;
+	top: -0.75rem;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+
+.fiche .outiles,
+.fiche .outiles>a{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--main_accent-color);
+    font-family: var(--headings-font-family);
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+    
+.fiche .outiles{
+    gap: 20px;
+    grid-column: 4 / 6;
+    grid-row: 4;
+}
+
+.fiche .outiles>a:hover{
+    font-weight: 500;
+}
+
+
+
+/* Ajustement pour la page Fiche d'enchère**/
+
+.ajuster{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+    margin-top: 0; /*compensation pour l'espace trop grande entre les cartes et la fiche */
+    color: var(--main_accent-color);
+    text-transform: capitalize;
+    padding-left: 20px;
+}
+
+
+.containeur-main .grid-card {
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+
+/*...................................................................*/
+
+@media only screen and (max-width: 1240px) {
+     .fiche-offre button{
+        flex-basis: 100%;
+    }
+
+      
+    .img-survoler .description{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }    
+    
+    .img-survoler .description > div:last-child{
+        padding-top: 0;
+    } 
+     
+}
+
+@media only screen and (max-width: 900px){
+
+    .img-survoler .liste-img{
+        flex-direction: row;
+   }
+       
+
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+    .img-survoler .liste-img{
+        flex-direction: column;
+   }
+
+    .img-survoler{
+        grid-column: 1 / 6;
+        grid-row: 2 / 4;
+    }
+        
+
+    .acordion {
+        grid-column: 1 / 6;
+        grid-row: 4 / 5; 
+
+    }
+
+    .fiche-offre {
+        grid-column: 1 / 6;
+        grid-row: 5 / 8; 
+        
+    }
+
+    .fiche .outiles{
+        grid-column: 1 / 6;
+       grid-row: 8;
+    }
+
+    .containeur-main .ajuster {
+        margin-top: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+    
+    .img-survoler .liste-img{
+        flex-direction: row;
+   }
+
+
+}
