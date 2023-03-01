@@ -267,7 +267,7 @@
     gap: 20px;
 }  
 
-
+.fiche-offre .entete>span,
 .fiche-offre .entete,
 .fiche-offre .entete>a{
    display: flex;
