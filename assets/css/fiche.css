@@ -182,6 +182,7 @@
     text-transform: uppercase;
     letter-spacing: .05rem;
     line-height: 135%;
+    color: var(--main_accent-color);
 }
 
 .fiche-offre button,
