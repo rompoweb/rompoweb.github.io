@@ -2,6 +2,7 @@
 
     --largeur-colonne: 300px;
     --gouttiere: 26px;
+    
 }
 
 
@@ -140,11 +141,14 @@ header .image_text a:hover{
 
 
 .grid-card{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--largeur-colonne, 200px), 1fr));
-    gap: var(--gouttiere, 30px);
-    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* padding: 1rem; */
     font-family: var(--headings-font-family);
+    
 }
 
 .grid-card article{
@@ -153,6 +157,7 @@ header .image_text a:hover{
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 14px;
     border-radius: 3px;
 }
@@ -194,9 +199,24 @@ header .image_text a:hover{
     height: 100%;
     display: flex;
     justify-content: center;
-    
-    
+    gap: 1rem;
 }
+
+
+.grid-card .stamp-img {
+    width: 200px;
+    height: 250px;
+}
+
+.grid-card .stamp-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+
+
 .grid-card aside{
    position: absolute;
    padding-left: 250px;
@@ -279,19 +299,21 @@ header .image_text a:hover{
 .comp-text-img{
     margin-left: auto;
     margin-right: auto;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     display: flex;
     max-width: 1185px;
     justify-content: space-between;
-    gap: 50px;
+    gap: 1rem;
     font-family: var(--text-font-family);
     border: #c1a550 1px solid;
-    padding: 40px 70px 55px 70px;
+    padding: clamp(1rem, 5vw, 55px) clamp(1rem, 5vw, 70px);
 }
 .comp-text-img aside{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    flex-basis: 30%;
+    min-width: 30vw;
 }
 .comp-text-img aside span{
     font-size: 14px;
@@ -299,14 +321,18 @@ header .image_text a:hover{
 }
 .comp-text-img article{
     display: flex;
-    max-width: 666px;
+    flex-basis: 60%;
     min-width: 30ch;
     flex-direction: column;
     gap: 30px;
     padding-right: 20px;
 }
 
-
+.comp-text-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .comp-text-img h3{
     font-size: 20px;
@@ -343,7 +369,8 @@ header .image_text a:hover{
     align-items: center;
     gap: 30px;
     justify-content: space-between; 
-    padding: 50px 100px 65px 100px; 
+    /* padding: 50px 100px 65px 100px;  */
+    padding: clamp(1rem, 5vw, 50px) clamp(1rem, 5vw, 100px);
 }
 
 
@@ -383,12 +410,23 @@ header .image_text a:hover{
 
 @media only screen and (max-width: 640px){
 
-    .grid-card{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+  .grid-card {
+    justify-content: center;
+  }
+  
+  .comp-text-img aside,
+  .comp-text-img article {
+    flex-grow: 1;
+  }
+
+
+
 }
+
+
+
+
+
 
         
 

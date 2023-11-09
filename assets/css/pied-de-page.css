@@ -75,6 +75,7 @@ footer .boite-courriel {
     border: 2px solid rgba(255, 255, 255, 0.927);
     border-radius: 5px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 10px;
 }
@@ -228,6 +229,15 @@ footer a:hover{
             text-align: left;
         }
 
-        
+}
 
+
+
+@media only screen and (max-width: 460px){
+
+    footer [type="search"],
+    footer [type="submit"] {
+      flex-grow: 1;
+    }
+   
 }

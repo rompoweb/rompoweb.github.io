@@ -1,6 +1,8 @@
 :root{
     --headings-font-family: 'Montserrat', sans-serif;
     --text-font-family: 'Inter', sans-serif;
+
+    --font-size: clamp(0.9rem, 0.9vw, 2rem);
 }
 
 

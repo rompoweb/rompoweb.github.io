@@ -15,10 +15,20 @@
     <title>Catalogue</title>
   </head>
   <body>
+    <div class="container-logo">
+      <a role="menuitem" href="./index.html"
+        ><img src="./assets/img/logo_LR_Stampee.svg" alt="logo-LR-Stampee"
+      /></a>
+    </div>
+
+    <input type="checkbox" role="mobile-menu" />
     <nav>
       <div role="menubar" class="navigation">
         <a role="menuitem" href="./index.html"
-          ><img src="./assets/img/logo_LR_Stampee.svg" alt="logo-LR-Stampee"
+          ><img
+            src="./assets/img/logo_LR_Stampee.svg"
+            class="stampee-logo"
+            alt="logo-LR-Stampee"
         /></a>
         <div class="deroulant">
           <a class="menu-el" role="menuitem" href="#">Les Enchères</a>
@@ -47,9 +57,9 @@
               ><img src="./assets/img/bookmark.svg" alt="bookmark"
             /></a>
 
-            <a href="#menu">
+            <!-- <a href="#menu">
               <img src="./assets/img/troisBars.svg" alt="menu" />
-            </a>
+            </a> -->
           </div>
           <div class="barRecherche">
             <select name="category">
@@ -270,10 +280,9 @@
         </div>
       </div>
       <div class="btns-pages">
-        <img src="./assets/img/page-arrow-left.svg" alt="page-precedent" /><span
-          >1</span
-        ><span>2</span><span>2</span
-        ><img src="./assets/img/page-arrow.svg" alt="page-suivante" />
+        <img src="./assets/img/page-arrow-left.svg" alt="page-precedent" />
+        <div><span>1</span><span>2</span><span>2</span></div>
+        <img src="./assets/img/page-arrow.svg" alt="page-suivante" />
       </div>
     </main>
 

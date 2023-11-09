@@ -12,9 +12,11 @@
     flex-direction: column;
     background-color: var(--second_background-color);
     gap: 30px;
-    padding: 20px;
-    flex-basis: 25%;
-    
+    max-width: 25%;
+    min-width: 300px;
+    height: fit-content;
+    padding: 1.5rem 1rem;
+
 }
     
 
@@ -66,7 +68,8 @@
     align-items: baseline;
     width: 100%;
     font-family: var(--text-font-family);
-
+    justify-content: space-between;
+    padding-top: 1rem;
 }
 
 
@@ -82,10 +85,18 @@
 .filtre-aside>div{
     padding-bottom: 20px;
     border-bottom:  1px solid var(--border_card-color) ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+
 .filtre-aside>div .champ-double{
-    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  padding-top: 1rem;
 }
     
     
@@ -102,22 +113,31 @@ color: var(--main_accent-color);
 }
     
     
-
-
-
 .filtre,
-.catalogue div{
+.catalogue>div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    
+    padding: 1rem;
 }
 
+
 .catalogue .grid-card{
-   flex-basis: 70%;
+  flex-basis: 72%;
 }
+
+
+.catalogue .btns-pages {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .filtre{
     padding-bottom: 50px;
@@ -193,7 +213,8 @@ color: var(--main_accent-color);
     padding-top: 50px;
     justify-content: center;
 }
-    
+   
+
 
 .catalogue .btns-pages span{
     padding: 10px 16px;
@@ -209,3 +230,13 @@ color: var(--main_accent-color);
 .catalogue .btns-pages img{
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 1178px) {
+   
+      .catalogue .grid-card {
+        flex-basis: 54%;
+      }
+  }
+  
+
