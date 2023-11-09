@@ -312,8 +312,6 @@ header .image_text a:hover{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    flex-basis: 30%;
-    min-width: 30vw;
 }
 .comp-text-img aside span{
     font-size: 14px;
@@ -408,6 +406,14 @@ header .image_text a:hover{
 }
 
 
+@media only screen and (max-width: 815px){
+
+
+  .comp-text-img{
+    justify-content: center;
+  }
+
+}
 @media only screen and (max-width: 640px){
 
   .grid-card {
@@ -419,7 +425,7 @@ header .image_text a:hover{
     flex-grow: 1;
   }
 
-
+ 
 
 }
 
