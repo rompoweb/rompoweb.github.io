@@ -284,7 +284,10 @@ input[type="checkbox"]:not(:checked) ~ nav .navigation:not(.card > nav) {
   .bloc-conn .barRecherche select {
     display: none;
   }
-
+  
+  nav .contenue-deroulant{
+    background: unset;
+  }
 
   .bloc-conn .barRecherche > input {
     min-width: fit-content;
