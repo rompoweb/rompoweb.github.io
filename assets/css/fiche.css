@@ -91,6 +91,7 @@
 
 .img-survoler .survole{
     align-items: center;
+   
 }
 
 
@@ -466,6 +467,13 @@
     .img-survoler .liste-img{
         flex-direction: row;
    }
-
-
+   .fiche {
+    padding: 0;
+   }
+   .fiche > h2 {
+    padding-left: 1rem;
+   }
+   .containeur-main .grid-card {
+    padding-left: 0;
+   }
 }
