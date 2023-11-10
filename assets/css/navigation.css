@@ -5,6 +5,7 @@
     filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.15));
     width: 100%;
     padding: 0px 16px;
+    position: relative;
   }
 
   nav .navigation {
@@ -179,10 +180,9 @@ nav .navigation .stampee-logo{
   .container-logo {
     display: block;
     padding: 0.5rem 1rem;
-    position: relative;
+    /* position: relative; */
     background-color: var(--second_background-color);
     top: 0;
-    z-index: 2;
   }
   
   .container-logo img {
@@ -210,40 +210,21 @@ nav .navigation .stampee-logo{
   nav .navigation:not(.card > nav) {
     position: absolute;
     right: 0;
-    left: -100%; 
-    bottom: 0;
     top: 100%;
     padding-top: 2rem;
     margin: unset;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: max-content;
-    max-height: fit-content;
-    opacity: 0; 
+    height: fit-content;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     background-color: var(--second_background-color);
     padding: 2rem 1rem;
   }
   
 
-  /* nav .navigation {
-    display: flex;
-    justify-content: space-between;
-    gap: 35px;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1400px;
-  } */
 
-
-
-
-
-
-
-
-  input[type="checkbox"]:checked ~ nav .navigation:not(.card > nav) {
+input[type="checkbox"]:checked ~ nav .navigation:not(.card > nav) {
     transform: translateX(0%);
     left: 0;
     opacity: 1;
@@ -303,6 +284,7 @@ input[type="checkbox"]:not(:checked) ~ nav .navigation:not(.card > nav) {
   .bloc-conn .barRecherche select {
     display: none;
   }
+
 
   .bloc-conn .barRecherche > input {
     min-width: fit-content;

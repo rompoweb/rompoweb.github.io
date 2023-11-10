@@ -220,6 +220,7 @@ header .image_text a:hover{
 .grid-card aside{
    position: absolute;
    padding-left: 250px;
+   z-index: -2;
    
 }
 

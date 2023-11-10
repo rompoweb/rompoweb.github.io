@@ -121,6 +121,7 @@ color: var(--main_accent-color);
     flex-wrap: wrap;
     gap: 20px;
     padding: 1rem;
+    
 }
 
 
@@ -145,6 +146,8 @@ color: var(--main_accent-color);
 }
    
 
+
+
 .filtre button{
     text-transform: none;
     font-size: 16px;
@@ -160,12 +163,12 @@ color: var(--main_accent-color);
 
 .filtre span{
     display: block;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     font-family: var(--headings-font-family);
     color: var(--main_accent-color);
-    border-right:  1px solid var(--border_card-color);
-    padding: 10px 16px;
+    /* border-right:  1px solid var(--border_card-color); */
+    
 }
     
 .filtre-aside .btn-remettre,
@@ -237,6 +240,27 @@ color: var(--main_accent-color);
       .catalogue .grid-card {
         flex-basis: 54%;
       }
+  }
+@media only screen and (max-width: 540px) {
+   
+    .filtre {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: unset;
+    }
+
+
+    .filtre .btn-vue {
+        width: 47px !important;
+    }
+
+    .filtre > *:not(.filtre span) {
+        width: 100%;
+    }
+
+  
+
+
   }
   
 
